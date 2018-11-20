@@ -1,0 +1,7 @@
+query GetEntry($entryId: ID!) {
+
+  entry(id: $entryId) {
+    id
+  }
+
+}

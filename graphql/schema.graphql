@@ -1,0 +1,24 @@
+type Query {
+  entry(id: ID!): Entry
+  entrySnapshot(entryId: ID!): EntrySnapshot
+  entrySnapshots: [EntrySnapshot]
+  userProfiles: [UserProfile]
+}
+
+type Entry {
+  id: ID
+  contentType: ContentType
+}
+
+type ContentType {
+  id: ID
+}
+
+type EntrySnapshot {
+  entryId: ID
+}
+
+type UserProfile {
+  id: ID
+  email: String
+}
